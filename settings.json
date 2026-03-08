@@ -1,0 +1,38 @@
+// open settings (Ctrl + Shift + P -> Open User Settings (JSON)) and paste this entire block:
+
+{
+  // Sets Prettier as the default tool to fix code formatting
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Automatically fixes code formatting every time you save
+  "editor.formatOnSave": true,
+
+  // Saves your work automatically when you click away from the window
+  "files.autoSave": "onFocusChange",
+
+  // Sets the indentation space to 2 (standard for Web Dev)
+  "editor.tabSize": 2,
+
+  // Applies the professional One Monokai color theme
+  "workbench.colorTheme": "One Monokai",
+
+  // Applies the Material Icon Theme for better file visibility
+  "workbench.iconTheme": "material-icon-theme",
+
+  // Automatically adds the closing tag in HTML (e.g., </div>)
+  "html.autoClosingTags": true,
+
+  // Enables custom labels for file tabs (Perfect for Next.js)
+  "workbench.editor.customLabels.enabled": true,
+
+  // Changes "page.js" tabs to show the folder name (e.g., "Page: Home")
+  "workbench.editor.customLabels.patterns": {
+    "**/app/**/page.js": "Page: ${dirname}"
+  },
+
+  // Tells VS Code where to find your Python engine
+  "python.defaultInterpreterPath": "python",
+
+  // Stops Jupyter from asking to restart every time you run a cell
+  "jupyter.askForKernelRestart": false
+}
